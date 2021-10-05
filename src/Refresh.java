@@ -1,18 +1,16 @@
+import java.util.Arrays;
 import java.util.Scanner;
 public class Refresh {
     public static void main(String[] args) {
-        String str = "ABCDE";
-        char ch = str.charAt(3);
+        int[] arr = {0,1,2,3,4};
+        int [][] arr2D = {{11,12}, {21,22}};
+        System.out.println(Arrays.toString(arr));
+        System.out.println(Arrays.deepToString(arr2D));
 
-        String str2 = "012345";
-        String tmp = str.substring(1,4);
-        int length = str.length();
-        boolean tt = str2.equals("012345");
-        System.out.println(ch);
-        System.out.println(tmp);
-        System.out.println(length);
-        System.out.println(tt);
-
+        String[][] str2D = new String[][] {{"aaa", "bbb"}, {"AAA", "BBB"}};
+        String[][] str2D2 = new String[][] {{"aaa", "bbb"}, {"AAA", "BBB"}};
+        System.out.println(Arrays.equals(str2D, str2D2));
+        System.out.println(Arrays.deepEquals(str2D, str2D2));
 
     }
 }
