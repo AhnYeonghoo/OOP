@@ -11,7 +11,7 @@ class Point2 {
     int x = 10;
     int y = 20;
     Point2(int x, int y) {
-        super() // 최상위 조상 클래스의 생성자 Object()를 호출
+        super(); // 최상위 조상 클래스의 생성자 Object()를 호출
         this.x = x;
         this.y = y;
     }

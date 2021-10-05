@@ -1,5 +1,6 @@
 import java.util.Arrays;
 import java.util.Scanner;
+import TankInfo.*;
 public class Refresh {
     public static void main(String[] args) {
         int[] arr = {0,1,2,3,4};
@@ -11,6 +12,7 @@ public class Refresh {
         String[][] str2D2 = new String[][] {{"aaa", "bbb"}, {"AAA", "BBB"}};
         System.out.println(Arrays.equals(str2D, str2D2));
         System.out.println(Arrays.deepEquals(str2D, str2D2));
+
 
     }
 }
