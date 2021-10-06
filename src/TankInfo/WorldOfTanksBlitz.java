@@ -1,24 +1,24 @@
 package TankInfo;
 
 class TankInfo {
-    private int damage;
-    private int health;
-    private int defense;
-    float DPM;
-    private float reload;
+    static int damage;
+    static int health;
+    static int defense;
+    static float DPM;
+    static float reload;
     // 데미지, 체력, 방어력, DPM, 재장전 시간
 
-    TankInfo() {
-        this(0,0,0,0.0f);
-    }
 
-    TankInfo(int damage, int health, int defense, float reload) {
+    TankInfo(int damage, int health, int defense, float reload, float DPM) {
         super();
         this.damage = damage;
         this.health = health;
         this.defense = defense;
         this.reload = reload;
-        this.DPM = (float)damage * 60.0f / reload;
+        this.DPM = DPM;
+    }
+    TankInfo() {
+        this(0, 0, 0, 0, 0f);
     }
 
     public void setDamage(int dm) {
@@ -66,14 +66,16 @@ class Progetto extends TankInfo {
         super();
         this.tier = tier;
     }
+    Progetto() {
+        this(0,0,0,0f,"none");
+    }
 
 
 }
 public class WorldOfTanksBlitz {
     public static void main(String[] args) {
-        Progetto proGet = new Progetto(180, 1500, 140, 10, "8tier" );
-        System.out.println();
-
+        Progetto proGet = new Progetto(180, 1500, 140, 10f, "8tier" );
+        System.out.println(proGet.damage);
 
     }
 }
