@@ -1,27 +1,17 @@
 import java.util.*;
 public class Refresh {
+    static void printArr(int[] numArr) {
+        for (int j : numArr) {
+            System.out.println(j);
+        }
+        System.out.println();
+    }
     public static void main(String[] args) {
-        MyMath mm = new MyMath();
-        long result1 = mm.add(5L, 3L);
-        long result2 = mm.sub(5L,3L);
-        long result3 = mm.multiply(5L,3L);
-        double result4 = mm.divide(5L,3L);
-        System.out.println(result1);
-        System.out.println(result2);
-        System.out.println(result3);
-        System.out.println(result4);
-
-
-
+        int[] result = new int[10];
+        for (int i = 0; i < 10; i++) {
+            result[i] = (int)(Math.random() * 20);
+        }
+        printArr(result);
 
     }
-}
-
-class MyMath {
-    long add (long a, long b) {
-        return a + b;
-    }
-    long sub (long a, long b) { return a - b; }
-    long multiply (long a, long b) { return a * b; }
-    double divide (double a, double b) { return a / b; }
 }

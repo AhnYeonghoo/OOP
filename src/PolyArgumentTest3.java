@@ -67,6 +67,7 @@ class Buyer3 {
         System.out.println("구입하신 물품의 총 금액은 = " + sum + "만원입니다.");
         System.out.println("구입하신 물품들은 " + itemList + "입니다.");
     }
+
 }
 public class PolyArgumentTest3 {
     public static void main(String[] args) {
