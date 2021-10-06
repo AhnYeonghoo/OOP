@@ -7,7 +7,7 @@ public class CastingTest1 {
         FireEngine fe = new FireEngine();
         ;
         FireEngine fe2 = null;
-
+        System.out.println(Object.class.isInstance(fe));
         fe.water();
         car = fe; // 자손 -> 조상 형변환 생략 가능
         fe2 = (FireEngine) car; // 조상 -> 자손으로 형변환은 반드시 캐스팅 문법!
