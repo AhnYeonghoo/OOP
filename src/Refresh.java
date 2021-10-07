@@ -1,17 +1,20 @@
-import java.util.*;
 public class Refresh {
-    static void printArr(int[] numArr) {
-        for (int j : numArr) {
-            System.out.println(j);
-        }
-        System.out.println();
-    }
     public static void main(String[] args) {
-        int[] result = new int[10];
-        for (int i = 0; i < 10; i++) {
-            result[i] = (int)(Math.random() * 20);
+        String[] strArr = { "100" , "200", "300"};
+        System.out.println(concatenate("", "100", "200", "300"));
+        System.out.println(concatenate("-",strArr));
+        System.out.println(concatenate(",", new String[] {"1", "2", "3"} ));
+        System.out.println("["+concatenate(",", new String[0])+"]");
+
+
+    }
+    static String concatenate(String delim, String... args) {
+        String result = "";
+        for (String str : args) {
+            result += str + delim;
         }
-        printArr(result);
+        return result;
 
     }
 }
+
