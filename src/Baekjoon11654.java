@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Baekjoon11720 {
+class Baekjoon11654 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
