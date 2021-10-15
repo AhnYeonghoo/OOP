@@ -1,13 +1,11 @@
-import java.util.*;
+import java.util.Scanner;
 
-class Main {
 
+public class Baekjoon2908 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
         String num1 = sc.next();
         String num2 = sc.next();
-
         String reverse = "";
         String reverse2 = "";
         for (int i = num1.length()-1; i >= 0; i--) {
@@ -23,3 +21,4 @@ class Main {
         }
     }
 }
+
