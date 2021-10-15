@@ -5,9 +5,16 @@ class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        char ch = sc.next().charAt(0);
-        int as = (int)ch;
-        System.out.println(as);
+        int count = sc.nextInt();
+        String str = sc.next();
+        int sum = 0;
+        for (int i = 0; i < count; i++) {
+            char temp = str.charAt(i);
+            int num = Character.getNumericValue(temp);
+            sum += num;
+
+        }
+        System.out.println(sum);
 
 
     }
