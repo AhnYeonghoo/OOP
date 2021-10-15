@@ -1,6 +1,7 @@
-import java.util.Scanner;
+import java.util.*;
 
-public class Baekjoon11654 {
+class Main {
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -9,11 +10,12 @@ public class Baekjoon11654 {
         int sum = 0;
         for (int i = 0; i < count; i++) {
             char temp = str.charAt(i);
-               int num = Character.getNumericValue(temp);
-               sum += num;
+            int num = Character.getNumericValue(temp);
+            sum += num;
 
         }
         System.out.println(sum);
-    }
 
+
+    }
 }
